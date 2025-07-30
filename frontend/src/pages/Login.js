@@ -24,7 +24,7 @@ function Login () {
       handleError("Email and Password are required");
     }
     try{
-      const url = "https://auth-mern-gc54iv08x-muhammad-naveeds-projects-3f16895f.vercel.app/login";
+      const url = "https://auth-mern-gc54iv08x-muhammad-naveeds-projects-3f16895f.vercel.app/auth/login";
       const response= await fetch(url,{
         method: "POST",
         headers: {
