@@ -31,7 +31,8 @@ function Singup() {
         headers: {
           'content-type': 'Application/json'
         },
-        body: JSON.stringify(singnUpInfo)
+        body: JSON.stringify(singnUpInfo),
+         mode: 'cors'
 
       });
       const result = await response.json()
