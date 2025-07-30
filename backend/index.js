@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS config
 const corsOptions = {
-  origin: 'https://auth-mern-app-fh4u.vercel.app', // your frontend
-  credentials: true, // only if you're using cookies or headers like Authorization
+  origin: 'https://auth-mern-app-fh4u.vercel.app', 
 };
 
 app.use(cors(corsOptions));
