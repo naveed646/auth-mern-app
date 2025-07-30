@@ -24,7 +24,7 @@ function HomePage() {
 
   const fetchProduct= async()=>{
     try{
-      const url="http://localhost:5000/product"
+      const url="https://auth-mern-app-fh4u.vercel.app/product"
       const header={
         headers: {
           'Authorization': localStorage.getItem("token"),
