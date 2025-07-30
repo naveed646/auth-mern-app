@@ -24,7 +24,7 @@ function Login () {
       handleError("Email and Password are required");
     }
     try{
-      const url = "http://localhost:5000/auth/login";
+      const url = "https://auth-mern-app-fh4u.vercel.app//auth/login";
       const response= await fetch(url,{
         method: "POST",
         headers: {
