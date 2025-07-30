@@ -10,8 +10,9 @@ const productRouter = require('./Routes/productRouter');
 const PORT=process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "http://localhost:3000",
-  methods: ["GET", "POST", "PUT"]
+  origin: 'https://auth-mern-app-fh4u.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true 
 }));
 app.use('/auth', AuthRouter);
 app.use('/product', productRouter);
